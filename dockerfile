@@ -6,12 +6,12 @@ ENV FLASK_APP="main.py"
 
 RUN apk add py3-pip
 RUN apk add git
-RUN git clone https://gitlab.com/isen5910803/tp02-mock-frontend
-RUN python -m pip install -r tp02-mock-frontend/requirements.txt --break-system-packages
+RUN git clone https://github.com/Benjamin-htr/tp_05_devops_ISEN
+RUN python -m pip install -r tp_05_devops_ISEN/requirements.txt --break-system-packages
 
-EXPOSE 5000
+EXPOSE 5001
 
-WORKDIR /app/tp02-mock-frontend
+WORKDIR /app/tp_05_devops_ISEN
 
 # ENTRYPOINT FLASK_APP=main.py flask run --host=0.0.0.0
 CMD ["flask", "run", "--host", "0.0.0.0"]
