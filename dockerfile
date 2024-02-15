@@ -14,4 +14,4 @@ EXPOSE 5001
 WORKDIR /app/tp_05_devops_ISEN
 
 # ENTRYPOINT FLASK_APP=main.py flask run --host=0.0.0.0
-CMD ["flask", "run", "--host", "0.0.0.0"]
+CMD ["flask", "run", "--host", "0.0.0.0", "--port", "5001"]
